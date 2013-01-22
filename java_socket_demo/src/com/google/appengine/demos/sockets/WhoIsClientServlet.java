@@ -32,7 +32,7 @@ public class WhoIsClientServlet extends HttpServlet {
   }
 
   void writeFooter(HttpServletResponse resp) throws IOException {
-    resp.getWriter().println("</head></html>");
+    resp.getWriter().println("</body></html>");
   }
 
   static String getParam(HttpServletRequest req, String attributeName, String defaultValue) {
